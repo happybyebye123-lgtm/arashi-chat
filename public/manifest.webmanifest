@@ -1,0 +1,12 @@
+{
+  "name":"Arashi Chat",
+  "short_name":"Arashi",
+  "start_url":"./",
+  "display":"standalone",
+  "background_color":"#ffffff",
+  "theme_color":"#0b65ff",
+  "description":"Fan-made Arashi-style chat app",
+  "icons":[
+    {"src":"messenger.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}
+  ]
+}
