@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+  <meta name="theme-color" content="#0b65ff">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Arashi">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="messenger.svg">
+  <link rel="icon" href="messenger.svg">
+  <title>Arashi Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div class="avatar-wrap">
+        <img src="arashi-avatar.jpeg" class="avatar" alt="Arashi">
+        <span class="online"></span>
+      </div>
+
+      <div class="head-text">
+        <div class="name">Arashi</div>
+        <div class="status">đang hoạt động</div>
+      </div>
+
+      <button id="installBtn" class="icon-btn" hidden title="Cài app">＋</button>
+      <button id="clearBtn" class="icon-btn" title="Xóa đoạn chat">⋯</button>
+    </header>
+
+    <section id="chat" class="chat" aria-live="polite"></section>
+
+    <div id="typing" class="typing" hidden>
+      <img src="arashi-avatar.jpeg" class="mini-avatar" alt="">
+      <span><i></i><i></i><i></i></span>
+    </div>
+
+    <form id="composer" class="composer">
+      <button type="button" id="voiceBtn" class="round-btn" title="Đọc tin nhắn">🔊</button>
+
+      <textarea
+        id="input"
+        rows="1"
+        maxlength="2000"
+        placeholder="Nhắn cho Arashi..."
+        autocomplete="off"
+      ></textarea>
+
+      <button class="send" type="submit">➤</button>
+    </form>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
